@@ -1,5 +1,4 @@
 pub struct Behavior {
-    pub risk: f64, // Готовность принимать неопределённость и потенциальный убыток
     pub patience: f64, // Склонность ждать и удерживать позицию
     pub impulsiveness: f64, // Насколько быстро агент принимает решение
     pub greed: f64, // Насколько сильно потенциальная прибыль повышает привлекательность действия
@@ -8,9 +7,8 @@ pub struct Behavior {
 }
 
 impl Behavior {
-    pub fn new(risk: f64, patience: f64, impulsiveness: f64, greed: f64, fear: f64, sociality: f64) {
+    pub fn new(patience: f64, impulsiveness: f64, greed: f64, fear: f64, sociality: f64) {
         Behavior {
-            risk,
             patience,
             impulsiveness,
             greed,
